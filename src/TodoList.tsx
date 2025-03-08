@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import TodoItem from './TodoItme';
 
 const TodoList = () => {
@@ -41,7 +41,7 @@ const TodoList = () => {
 
     // Rensa intervallet när komponenten tas bort
     return () => clearInterval(intervalId);
-  }, [todos]);
+  },);
 
 
  return (
